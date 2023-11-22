@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools >= 61", "wheel", "Cython"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "epos_python"
+version = "0.0.1"
+authors = [{name = "Eulitha AG", email = "info@eulitha.com"}]
+dependencies = []
+requires-python = ">=2.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: Windows"
+]
+
+[tool.setuptools]
+py-modules = []
+
+[project.urls]
+Home = "https://www.eulitha.com"

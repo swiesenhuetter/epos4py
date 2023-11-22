@@ -1,0 +1,12 @@
+/.idea
+/dist
+/venv
+/chrocodile_gms.egg-info
+/build
+/*egg-info
+*.pyd
+**/__pycache__/
+
+
+chrocodile_gms/cpp_wrapper/.vs/
+chrocodile_gms/cpp_wrapper/x64/
