@@ -5,7 +5,7 @@ from Cython.Build import cythonize
 from pathlib import Path
 import sysconfig
 
-ext_files = ["epos_python/PrecitecCHRoco2.py", "epos_python/__init__.py"]
+ext_files = ["epos_python/__main__.py", "epos_python/__init__.py"]
 
 def get_export_symbols_fix(self, ext_module):
     """
@@ -44,14 +44,14 @@ class BinaryOnlyInstall(OriginalInstall):
 
 
 setup(
-    name='chrocodile_gms',
+    name='epos_python',
     ext_modules=cythonize(ext_files,
                           build_dir="build",
                           force=True,
                           compiler_directives={'language_level': "3"}),
     cmdclass={'install_lib': BinaryOnlyInstall},
     package_data={
-        'chrocodile_gms': ['lib/*.dll', '*.pyd']
+        'epos_python': ['lib/*.dll', '*.pyd']
     },
     packages=find_packages(),
 )
