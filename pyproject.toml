@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools >= 61", "wheel", "Cython"]
+requires = ["setuptools >= 61", "wheel", "pybind11"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "epos_python"
-version = "0.0.1"
+version = "0.0.2"
 authors = [{name = "Eulitha AG", email = "info@eulitha.com"}]
 dependencies = []
 requires-python = ">=3.7"
